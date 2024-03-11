@@ -15,7 +15,7 @@ public void addRostlinka(Flower flower){
     if (flower.getNeededArea()+aktualArea<=flowerArea) {
         rostlinky.add(flower);
     } else {
-        System.out.println("Not enough flower area ");
+        System.out.println("Not enough flower area  ");
     }
 }
 public void removeRostlinka(Flower flower){
