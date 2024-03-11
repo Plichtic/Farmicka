@@ -15,8 +15,29 @@ public abstract class Flower {
                 '}';
     }
 
-    public void watering(Flower f){
+    public void water(Flower f){
         f.chanceOfGrowth += 5;
     }
+    public void seed(Farm farm,Flower flower){
+        farm.addRostlinka(flower);
+    }
+    public void harvest(Flower flower,Farm farm){
+        farm.removeRostlinka(flower);
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public double getNeededArea() {
+        return neededArea;
+    }
+
+    public double getChanceOfGrowth() {
+        return chanceOfGrowth;
+    }
 }
