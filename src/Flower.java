@@ -15,4 +15,8 @@ public abstract class Flower {
                 '}';
     }
 
+    public void watering(Flower f){
+        f.chanceOfGrowth += 5;
+    }
+
 }
