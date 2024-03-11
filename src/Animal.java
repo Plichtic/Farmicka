@@ -4,6 +4,7 @@ public abstract class Animal {
     protected String name;
     protected Size size;
     protected String specialCare;
+    protected String zvuk;
 
     @Override
     public String toString() {
@@ -13,6 +14,9 @@ public abstract class Animal {
                 ", size=" + size +
                 ", specialCare='" + specialCare + '\'' +
                 '}';
+    }
+    public void pohladit(Animal animal){
+        System.out.println(animal.zvuk);
     }
 
     public String getType() {
