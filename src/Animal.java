@@ -34,4 +34,10 @@ public abstract class Animal {
     public String getSpecialCare() {
         return specialCare;
     }
+    public void sell(Animal animal,Farm farm){
+        farm.removeAnimal(animal);
+    }
+    public void buy(Farm farm, Animal animal){
+        farm.addAnimal(animal);
+    }
 }
