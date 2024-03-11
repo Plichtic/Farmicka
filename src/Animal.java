@@ -14,4 +14,20 @@ public abstract class Animal {
                 ", specialCare='" + specialCare + '\'' +
                 '}';
     }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Size getSize() {
+        return size;
+    }
+
+    public String getSpecialCare() {
+        return specialCare;
+    }
 }
